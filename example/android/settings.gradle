@@ -1,0 +1,6 @@
+rootProject.name = 'BitedataAnalyticsExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativebitedataanalytics'
+project(':reactnativebitedataanalytics').projectDir = new File(rootProject.projectDir, '../../android')
