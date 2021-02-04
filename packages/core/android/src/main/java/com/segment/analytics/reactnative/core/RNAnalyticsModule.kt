@@ -22,16 +22,16 @@
  * SOFTWARE.
  */
 
-package com.segment.analytics.reactnative.core
+package com.bitedata.analytics.reactnative.core
 
 import android.content.pm.PackageInfo
 import android.content.pm.PackageManager
 import android.net.Uri
 import com.facebook.react.bridge.*
-import com.segment.analytics.internal.Utils.getSegmentSharedPreferences
+import com.bitedata.analytics.internal.Utils.getSegmentSharedPreferences
 import java.util.concurrent.TimeUnit
 import com.facebook.react.bridge.ReadableMap
-import com.segment.analytics.*
+import com.bitedata.analytics.*
 import java.io.IOException
 import java.net.HttpURLConnection
 
@@ -115,7 +115,7 @@ class RNAnalyticsModule(context: ReactApplicationContext): ReactContextBaseJavaM
                     return promise.resolve(this)
                 }
                 else {
-                    return promise.reject("E_SEGMENT_RECONFIGURED", "Segment Analytics Client was allocated multiple times, please check your environment.")
+                    return promise.reject("E_BITEDATA_RECONFIGURED", "Bitedata Analytics Client was allocated multiple times, please check your environment.")
                 }
             }
         }
@@ -190,7 +190,7 @@ class RNAnalyticsModule(context: ReactApplicationContext): ReactContextBaseJavaM
             // if you created singleton in native code already,
             // you need to promise.resolve for RN to properly operate
         } catch(e: Exception) {
-            return promise.reject("E_SEGMENT_ERROR", e)
+            return promise.reject("E_BITEDATA_ERROR", e)
         }
 
         if(options.getBoolean("trackAppLifecycleEvents")) {

@@ -35,12 +35,17 @@ repositories {
         url "$rootDir/../node_modules/react-native/android"
         name 'React Native (local)'
     }
+    //here
+    maven {
+        url  "https://dl.bintray.com/ashishprasad2163/maven" 
+    }
     mavenCentral()
 }
 
 dependencies {
     api 'com.segment.analytics.android:analytics:4.9.0'
-
+    //here
+    api 'com.bitedata.analytics:preference:0.0.1'
     api 'com.facebook.react:react-native:+'
     api "org.jetbrains.kotlin:kotlin-stdlib:${rootProject.ext.has("kotlinVersion") ? rootProject.ext.get("kotlinVersion") : defaultKotlinVersion}"
 }

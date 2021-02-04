@@ -27,7 +27,7 @@ package com.segment.analytics.reactnative.integration.adjust
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
-import com.segment.analytics.reactnative.core.RNAnalytics
+import com.bitedata.analytics.reactnative.core.RNAnalytics
 import com.segment.analytics.Analytics
 import android.util.Log
 import com.segment.analytics.android.integrations.adjust.AdjustIntegration

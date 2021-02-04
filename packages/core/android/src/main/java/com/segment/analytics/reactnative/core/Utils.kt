@@ -1,9 +1,9 @@
-package com.segment.analytics.reactnative.core
+package com.bitedata.analytics.reactnative.core
 
 import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.bridge.ReadableType
-import com.segment.analytics.ValueMap
+import com.bitedata.analytics.ValueMap
 
 object Utils {
     fun toArray(readableArray: ReadableArray?): Array<Any?> {

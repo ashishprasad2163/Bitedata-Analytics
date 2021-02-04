@@ -22,10 +22,10 @@
  * SOFTWARE.
  */
 
-package com.segment.analytics.reactnative.core
+package com.bitedata.analytics.reactnative.core
 
-import com.segment.analytics.Analytics
-import com.segment.analytics.integrations.Integration
+import com.bitedata.analytics.Analytics
+import com.bitedata.analytics.integrations.Integration
 
 object RNAnalytics {
     private val integrations = mutableSetOf<Integration.Factory>()

@@ -22,7 +22,7 @@
  * SOFTWARE.
  */
 
-package com.segment.analytics.reactnative.core
+package com.bitedata.analytics.reactnative.core
 
 import android.view.View
 import com.facebook.react.ReactPackage
